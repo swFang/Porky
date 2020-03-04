@@ -5,7 +5,7 @@ const userSchema = new Schema({
     User: String,
     MonthlyBudget: Number,
     RemainingBudget: Number,
-    MonthlyCD: Number,
+    CDtime: Number,
     Events: [
         {
             Name: String,

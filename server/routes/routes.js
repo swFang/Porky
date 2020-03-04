@@ -24,16 +24,17 @@ module.exports = (app, db) => {
     */
     app.get('/storeData', async (req, res) => {
         let name = req.query.name; 
+        let budget = req.query.budget;
+        let CDtime = req.query.cdTime;
         const newUser = new user ({
             User: name,
-            MonthlyBudget: 500,
-            RemainingBudget: 500,
-            MonthlyCD: 10,
+            MonthlyBudget: budget,
+            RemainingBudget: budget,
+            CDtime: CDtime,
             Events: []
         })
         await newUser.save();
         res.send(newUser);
-
     });
 
     app.get('/getData', async (req, res) => {
