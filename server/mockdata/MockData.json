@@ -1,0 +1,17 @@
+{
+    "User": "string",
+    "UserInfo": {
+        "MonthlyBudget": "number",
+        "RemaningBudget": "number",
+        "MonthlyCD": "number",
+        "Events": [
+            { 
+                "Event": {
+                "Name": "name",
+                "Amount": "10000",
+                "StartDate": "date"
+                }
+            }
+        ]
+    }
+}
