@@ -2,13 +2,13 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose; 
 
 const userSchema = new Schema({
-    User: String,
+    userName: String,
     MonthlyBudget: Number,
     RemainingBudget: Number,
     CDtime: Number,
     Events: [
         {
-            Name: String,
+            EventName: String,
             Amount: Number,
             StartDate: Date
         }
