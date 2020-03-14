@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const user = require('../models/userSchema.js');
+var bodyParser = require('body-parser');
 const { addUser, getUserData, addEventToUser } = require('../utils/databaseUtils');
 
 //TODO: refactor all db functions into it's own file and use routes.js file as ONLY a rounter that's an intermediary that passes in the params to that db file.
 module.exports = (app, db) => {
+    app.use(bodyParser.json());
+
     app.get('/', (req,res) => {
         res.send({hi:'there'});
     });
@@ -15,13 +18,11 @@ module.exports = (app, db) => {
     MonthlyCD: Number,
     Events: [
     */
-    app.get('/storeData', async (req, res) => {
-        let userName = req.query.username; 
-        let budget = req.query.budget;
-        let CDtime = req.query.cdTime;
-
-        console.log(userName);
-        const newUser = await addUser(userName, budget, CDtime);
+    app.post('/createUser', async (req, res) => {
+        // let userName = req.query.username; 
+        // let budget = req.query.budget;
+        // let CDtime = req.query.cdTime;
+        const newUser = await addUser(req.body.userName, req.body.budget, req.body.cdTime);
         res.send(newUser);
     });
 
@@ -36,10 +37,10 @@ module.exports = (app, db) => {
     Amount: Number,
     StartDate: Date
     */
-    app.get('/addEvent', async (req, res) => {
-        let eventName = req.query.eventname; 
-        let amount = req.query.amount;
-        let userName = req.query.username; 
+    app.post('/addEvent', async (req, res) => {
+        let eventName = req.body.eventname; 
+        let amount = req.body.amount;
+        let userName = req.body.username; 
         
         const userEntry = await addEventToUser(userName, eventName, amount);
         res.send(userEntry);
