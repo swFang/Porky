@@ -16,8 +16,6 @@ const addUser = async (username, budget, cdTime ) => {
 };
 
 const getUserData = async (userName) => {
-    console.log('inside getuserdata');
-
     try {
         let userData = await user.findOne({userName: userName}, (err, user) => {
             if (err) {
@@ -44,7 +42,6 @@ const addEventToUser = async (userName, eventName, amount) => {
         if (!userEntry) {
             return false;
         }
-        //user exists, and i need to create an event
         if (userEntry) {
             const newEvent = {
                 EventName: eventName,

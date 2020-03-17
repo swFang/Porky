@@ -1,0 +1,7 @@
+{
+    "scripts" : {
+    "server": "nodemon index.js --prefix server",
+    "client": "npm run start --prefix porky-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    }
+}
