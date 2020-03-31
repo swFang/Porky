@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class purchaseItem extends Component {
+class PurchaseItem extends Component {
 
     render() {
         return ( 
-            <div className='purchaseItem'> purchaseItem </div>
+            <div className='PurchaseItem'> PurchaseItem </div>
         )
     }
 }
 
-export default purchaseItem;
+export default PurchaseItem;

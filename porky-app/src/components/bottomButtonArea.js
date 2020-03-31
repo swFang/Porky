@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
-class bottomButtonArea extends Component {
+class BottomButtonArea extends Component {
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return ( 
-            <div className='bottomButtonArea'> bottomButtonArea </div>
+            <div className='bottomButtonArea'> BottomButtonArea </div>
         )
     }
 }
 
-export default bottomButtonArea;
+export default BottomButtonArea;

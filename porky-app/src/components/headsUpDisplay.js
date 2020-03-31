@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class headsUpDisplay extends Component {
+class HeadsUpDisplay extends Component {
 
     constructor(props) {
         super(props);
@@ -8,9 +8,9 @@ class headsUpDisplay extends Component {
     
     render() {
         return ( 
-            <div className='headsUpDisplay'> headsUpDisplay </div>
+            <div className='headsUpDisplay'> HeadsUpDisplay </div>
         )
     }
 }
 
-export default headsUpDisplay;
+export default HeadsUpDisplay;

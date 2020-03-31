@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { purchaseItem } from './purchaseItem';
+import PurchaseItem from './PurchaseItem';
 
-class purchaseItemList extends Component {
+class PurchaseItemList extends Component {
 
     render() {
         return ( 
-            <div className='purchaseItemList'> purchaseItemList
-                <purchaseItem>1</purchaseItem>
-                <purchaseItem>2</purchaseItem>
-                <purchaseItem>3</purchaseItem>
+            <div className='PurchaseItemList'> PurchaseItemList
+                <PurchaseItem>1</PurchaseItem>
+                <PurchaseItem>2</PurchaseItem>
+                <PurchaseItem>3</PurchaseItem>
             </div>
         )
     }
 }
 
-export default purchaseItemList;
+export default PurchaseItemList;

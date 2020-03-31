@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { embeddedApp } from './components/embeddedApp';
+import EmbeddedApp from './components/EmbeddedApp';
+
 class App extends Component {
 
     render() {
         return ( 
-            <div className='app'>
-                <embeddedApp></embeddedApp>
-            </div>
+            <EmbeddedApp className='app'>
+                App
+            </EmbeddedApp>
         )
     }
 }
