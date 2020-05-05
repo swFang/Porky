@@ -8,7 +8,7 @@ class HeadsUpDisplay extends Component {
     
     render() {
         return ( 
-            <div className='headsUpDisplay'> HeadsUpDisplay </div>
+            <div className='headsUpDisplay'> $1000 </div>
         )
     }
 }

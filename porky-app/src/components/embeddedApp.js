@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import BottomButtonArea from './BottomButtonArea';
 import  HeadsUpDisplay  from './HeadsUpDisplay';
-import  NavigationBar  from './NavigationBar';
 import  PurchaseItemList  from './PurchaseItemList';
+import '../styling/EmbeddedApp.css';
 
 class EmbeddedApp extends Component {
     constructor(props) {
@@ -11,11 +11,9 @@ class EmbeddedApp extends Component {
     render() {
         return ( 
             <div className='embeddedApp'> 
-                EmbeddedApp
-                <BottomButtonArea> </BottomButtonArea>
                 <HeadsUpDisplay> </HeadsUpDisplay>
-                <NavigationBar> </NavigationBar>
                 <PurchaseItemList> </PurchaseItemList>
+                <BottomButtonArea> </BottomButtonArea>
             </div>
         );
     }

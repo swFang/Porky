@@ -5,10 +5,10 @@ class PurchaseItemList extends Component {
 
     render() {
         return ( 
-            <div className='PurchaseItemList'> PurchaseItemList
-                <PurchaseItem>1</PurchaseItem>
-                <PurchaseItem>2</PurchaseItem>
-                <PurchaseItem>3</PurchaseItem>
+            <div className='PurchaseItemList'> 
+                <PurchaseItem matured="PurchaseItemMatured">1</PurchaseItem>
+                <PurchaseItem matured="PurchaseItemMatured">2</PurchaseItem>
+                <PurchaseItem matured="PurchaseItemWaiting">3</PurchaseItem>
             </div>
         )
     }

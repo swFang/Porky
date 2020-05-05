@@ -1,0 +1,55 @@
+#root {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.embeddedApp {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;  
+    margin: auto;
+    width: auto;
+    width: 100%;    
+    background-color: white ;
+    position: relative;
+}
+
+.NavigationBar {
+    height: 3rem;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    font-family: 'Roboto', sans-serif;  
+    background-color:  #242424 ;
+    color: white;
+}
+
+.PurchaseItem {
+    height: 3rem;
+    border-bottom: 1px solid #242424;
+}
+
+.PurchaseItemMatured {
+    background-color: #b4ecb4 ;
+}
+
+.PurchaseItemWaiting {
+    background-color: #ff6961 ;
+}
+
+.headsUpDisplay {
+    height: 9rem;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+    color: #242424 ;
+}
+
+.bottomButtonArea{
+    bottom: 0;
+    height: 6rem;
+    border-bottom: 1px solid #242424;
+    width: 100%;
+    position: absolute;
+}
